@@ -7,10 +7,12 @@ import News from "./components/News";
 import Startups from "./components/Startups";
 import Customers from "./components/Customers";
 import Footer from "./components/Footer";
+import GlobalStyle from "./components/styles/Globals";
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <GlobalStyle />
       <Home />
       <AboutUs />
       <Graphics />

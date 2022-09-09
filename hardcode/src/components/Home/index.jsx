@@ -1,7 +1,9 @@
+import { ThemeH1 } from "../styles/Globals";
+
 const Home = () => {
   return (
     <div>
-      <span>Home</span>
+      <ThemeH1>Home</ThemeH1>
     </div>
   );
 };
