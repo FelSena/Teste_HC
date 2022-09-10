@@ -47,7 +47,7 @@ export const ThemeH3 = styled.h3`
 export const ThemeH4 = styled.h4`
   width: ${(props) => props.w || "100%"};
   font-family: "Lora", serif;
-  text-align: start;
+  text-align: ${(props) => props.text || "start"};
   font-size: 18px;
   color: ${(props) => props.color};
   @media (max-width: 767px) {
@@ -60,7 +60,7 @@ export const ThemeSpan = styled.span`
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  text-align: center;
+  text-align: ${(props) => props.text || "start"};
   color: ${(props) => props.color};
   @media (min-width: 767px) {
     font-size: 16px;
@@ -128,6 +128,7 @@ export const DefaultDiv = styled.div`
 export const ThemeLink = styled.a`
   color: ${(props) => props.color || "white"};
   font-size: ${(props) => props.font || "white"};
+  cursor: pointer;
 `;
 
 export const ThemeButton = styled.button`
