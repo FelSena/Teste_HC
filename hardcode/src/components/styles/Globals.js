@@ -47,16 +47,30 @@ export const ThemeH3 = styled.h3`
 export const ThemeH4 = styled.h4`
   width: ${(props) => props.w || "100%"};
   font-family: "Lora", serif;
+  text-align: start;
   font-size: 18px;
   color: ${(props) => props.color};
   @media (max-width: 767px) {
     font-size: 12px;
+    text-align: center;
+  }
+`;
+
+export const ThemeSpan = styled.span`
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: ${(props) => props.color};
+  @media (min-width: 767px) {
+    font-size: 16px;
   }
 `;
 
 export const DefaultImg = styled.img`
   width: ${(props) => props.w || "100%"};
   height: auto;
+  margin: ${(props) => props.margin};
   @media (min-width: 768px) {
     width: ${(props) => props.lgw || "100%"};
   }
@@ -64,18 +78,30 @@ export const DefaultImg = styled.img`
 
 export const Column = styled.div`
   width: ${(props) => props.w || "100%"};
+  height: ${(props) => props.h};
   display: flex;
   flex-direction: column;
   justify-content: ${(props) => props.justify || "space-between"};
+  align-items: ${(props) => props.items};
   padding: ${(props) => props.padding};
+  gap: ${(props) => props.gap};
+  @media (min-width: 768px) {
+    width: ${(props) => props.lgw || "100%"};
+  }
 `;
 
 export const Row = styled.div`
-  width: ${(props) => props.w || "100%"};
   display: flex;
+  width: ${(props) => props.w || "100%"};
   justify-content: ${(props) => props.justify || "space-between"};
   align-items: ${(props) => props.items || "center"};
+  gap: ${(props) => props.gap};
   padding: ${(props) => props.padding};
+  overflow-x: ${(props) => props.scroll};
+  @media (min-width: 768px) {
+    width: ${(props) => props.lgw || "100%"};
+    overflow-x: hidden;
+  }
 `;
 
 export const ColumnToRow = styled.div`
@@ -102,4 +128,23 @@ export const DefaultDiv = styled.div`
 export const ThemeLink = styled.a`
   color: ${(props) => props.color || "white"};
   font-size: ${(props) => props.font || "white"};
+`;
+
+export const ThemeButton = styled.button`
+  cursor: pointer;
+  width: ${(props) => props.w || "256px"};
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  @media (max-width: 767px) {
+    width: ${(props) => props.lgw};
+    height: 44px;
+    display: ${(props) => props.display};
+  }
 `;

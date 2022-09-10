@@ -1,4 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../assets/logo.svg";
+import {
+  faLinkedinIn,
+  faInstagram,
+  faTwitter,
+  faTelegramPlane,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   Column,
   ColumnToRow,
@@ -10,6 +17,7 @@ import {
   ThemeLink,
 } from "../styles/Globals";
 import { ColorDiv } from "./styles";
+import { faEnvelope, faFlag } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <DefaultDiv bg="black">
@@ -48,7 +56,26 @@ const Footer = () => {
         <ThemeH4 color="white">
           Buzzzzzzz® - Todos os direitos reservados
         </ThemeH4>
-        <Row>Incones</Row>
+        <Row justify="space-around" lgw="50%">
+          <a href="http://">
+            <FontAwesomeIcon icon={faLinkedinIn} inverse />
+          </a>
+          <a href="http://">
+            <FontAwesomeIcon icon={faInstagram} inverse />
+          </a>
+          <a href="http://">
+            <FontAwesomeIcon icon={faTwitter} inverse />
+          </a>
+          <a href="http://">
+            <FontAwesomeIcon icon={faTelegramPlane} inverse />
+          </a>
+          <a href="http://">
+            <FontAwesomeIcon icon={faEnvelope} inverse />
+          </a>
+          <a href="http://">
+            <FontAwesomeIcon icon={faFlag} inverse />
+          </a>
+        </Row>
       </ColumnToRow>
     </DefaultDiv>
   );
