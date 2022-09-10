@@ -24,7 +24,7 @@ const Interview = () => {
   return (
     <DefaultDiv>
       {width > 767 ? (
-        <Row justify="center" gap="50px">
+        <Row justify="center" gap="50px" lgw="100vw">
           <DefaultImg src={interviewLarge} w="100%" lgw="28%" margin="15px 0" />
           <Column justify="space-around" w="100%" lgw="28%">
             <DefaultImg src={verify} w="40px" lgw="40px" />

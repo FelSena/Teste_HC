@@ -12,6 +12,7 @@ export const GradientBar = styled.div`
 export const ZzzImg = styled.img`
   width: 200px;
   height: auto;
-  position: absolute;
-  right: 10px;
+  position: relative;
+  left: 240px;
+  top: 100px;
 `;
