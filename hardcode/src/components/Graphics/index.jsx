@@ -1,8 +1,10 @@
+import { DefaultDiv } from "../styles/Globals";
+
 const Graphics = () => {
   return (
-    <div>
+    <DefaultDiv>
       <span>Graphics</span>
-    </div>
+    </DefaultDiv>
   );
 };
 

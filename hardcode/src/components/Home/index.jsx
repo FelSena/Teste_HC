@@ -1,10 +1,10 @@
-import { ThemeH1 } from "../styles/Globals";
+import { DefaultDiv, ThemeH1 } from "../styles/Globals";
 
 const Home = () => {
   return (
-    <div>
+    <DefaultDiv>
       <ThemeH1>Home</ThemeH1>
-    </div>
+    </DefaultDiv>
   );
 };
 

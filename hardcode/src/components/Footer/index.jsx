@@ -53,7 +53,7 @@ const Footer = () => {
       <ColorDiv />
 
       <ColumnToRow>
-        <ThemeH4 color="white">
+        <ThemeH4 color="white" lgtext="center">
           Buzzzzzzz® - Todos os direitos reservados
         </ThemeH4>
         <Row justify="space-around" lgw="50%">

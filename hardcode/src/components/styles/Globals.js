@@ -37,10 +37,10 @@ export const ThemeH2 = styled.h2`
 
 export const ThemeH3 = styled.h3`
   font-family: "Lora", serif;
-  font-size: 24px;
+  font-size: 36px;
   color: ${(props) => props.color};
   @media (max-width: 767px) {
-    font-size: 16px;
+    font-size: 22px;
   }
 `;
 
@@ -52,7 +52,7 @@ export const ThemeH4 = styled.h4`
   color: ${(props) => props.color};
   @media (max-width: 767px) {
     font-size: 12px;
-    text-align: center;
+    text-align: ${(props) => props.lgtext || "start"};
   }
 `;
 

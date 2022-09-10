@@ -1,8 +1,10 @@
+import { DefaultDiv } from "../styles/Globals";
+
 const AboutUs = () => {
   return (
-    <div>
+    <DefaultDiv>
       <span>AboutUs</span>
-    </div>
+    </DefaultDiv>
   );
 };
 

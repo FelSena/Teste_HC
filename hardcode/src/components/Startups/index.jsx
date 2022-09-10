@@ -10,6 +10,8 @@ import {
 import zzz from "../../assets/zzz.png";
 import like from "../../assets/like-icons.png";
 import jayz from "../../assets/jay-z.png";
+import { StartupDiv } from "./styles";
+import background from "../../assets/PhotoBg.png";
 
 const Startups = () => {
   return (
@@ -59,6 +61,7 @@ const Startups = () => {
           <ThemeButton display="none">Aplicar</ThemeButton>
         </Column>
       </ColumnToRow>
+      <StartupDiv img={background}></StartupDiv>
     </DefaultDiv>
   );
 };

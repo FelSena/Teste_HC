@@ -1,8 +1,10 @@
+import { DefaultDiv } from "../styles/Globals";
+
 const Thesis = () => {
   return (
-    <div>
+    <DefaultDiv>
       <span>Teses</span>
-    </div>
+    </DefaultDiv>
   );
 };
 
