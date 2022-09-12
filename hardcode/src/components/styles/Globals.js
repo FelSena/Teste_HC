@@ -84,6 +84,7 @@ export const Column = styled.div`
   justify-content: ${(props) => props.justify || "space-between"};
   align-items: ${(props) => props.items};
   padding: ${(props) => props.padding};
+  flex-wrap: wrap;
   gap: ${(props) => props.gap};
   @media (min-width: 768px) {
     width: ${(props) => props.lgw || "100%"};
@@ -142,10 +143,14 @@ export const ThemeButton = styled.button`
   border-radius: 5px;
   font-size: 16px;
   font-weight: 600;
-  background-color: #fff;
+  background-color: ${(props) => props.bg || "white"};
+  color: ${(props) => props.color};
   @media (max-width: 767px) {
     width: ${(props) => props.lgw};
     height: 44px;
     display: ${(props) => props.display};
+  }
+  &:hover {
+    box-shadow: -8px 6px 0px -1px rgba(0, 0, 0, 0.75);
   }
 `;

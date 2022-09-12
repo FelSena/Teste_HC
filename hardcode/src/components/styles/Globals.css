@@ -1,0 +1,36 @@
+.swiper {
+  width: 90%;
+  height: auto;
+  background-color: black;
+}
+
+.swiper-slide {
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+.swiper-button-prev {
+  color: #fff;
+}
+
+.swiper-button-next {
+  color: #fff;
+}
+
+.swiper-scrollbar {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.swiper-scrollbar-drag {
+  background: #fff;
+}
+
+@media (max-width: 767px) {
+  .swiper {
+    width: 100%;
+  }
+  .swiper-slide {
+    width: 100%;
+    padding: 0;
+  }
+}
+
