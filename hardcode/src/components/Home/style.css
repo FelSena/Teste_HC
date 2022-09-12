@@ -1,0 +1,34 @@
+.base_bg {
+  height: 482px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7.5%;
+}
+.serena {
+  background-image: url("../../assets/serena.png");
+}
+
+.conor {
+  background-image: url("../../assets/conor.png");
+}
+
+.bono {
+  background-image: url("../../assets/bono.png");
+}
+
+@media (max-width: 767px) {
+  .base_bg {
+    background-position: right 8%;
+  }
+}
+
+@media (max-width: 1024) {
+  .base_bg {
+    background-position: right;
+  }
+} ;

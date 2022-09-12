@@ -20,6 +20,7 @@ export default GlobalStyle;
 export const ThemeH1 = styled.h1`
   font-family: "Lora", serif;
   font-size: 64px;
+  margin: 2px;
   color: ${(props) => props.color};
   @media (max-width: 767px) {
     font-size: 32px;
@@ -29,6 +30,7 @@ export const ThemeH1 = styled.h1`
 export const ThemeH2 = styled.h2`
   font-family: "Lora", serif;
   font-size: 48px;
+  margin: 2px;
   color: ${(props) => props.color};
   @media (max-width: 767px) {
     font-size: 24px;
@@ -38,6 +40,7 @@ export const ThemeH2 = styled.h2`
 export const ThemeH3 = styled.h3`
   font-family: "Lora", serif;
   font-size: 36px;
+  margin: 2px;
   color: ${(props) => props.color};
   @media (max-width: 767px) {
     font-size: 22px;
@@ -49,6 +52,7 @@ export const ThemeH4 = styled.h4`
   font-family: "Lora", serif;
   text-align: ${(props) => props.text || "start"};
   font-size: 18px;
+  margin: 2px;
   color: ${(props) => props.color};
   @media (max-width: 767px) {
     font-size: 12px;
@@ -109,7 +113,8 @@ export const ColumnToRow = styled.div`
   width: ${(props) => props.w || "100%"};
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: ${(props) => props.justify || "space-between"};
+  gap: ${(props) => props.gap};
   align-items: ${(props) => props.items};
   padding: ${(props) => props.padding};
   @media (min-width: 767px) {
@@ -122,7 +127,7 @@ export const DefaultDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) => props.bg};
+  background: ${(props) => props.bg};
   padding: 7.5%;
 `;
 
@@ -145,7 +150,7 @@ export const ThemeButton = styled.button`
   font-weight: 600;
   background-color: ${(props) => props.bg || "white"};
   color: ${(props) => props.color};
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     width: ${(props) => props.lgw};
     height: 44px;
     display: ${(props) => props.display};
@@ -153,4 +158,11 @@ export const ThemeButton = styled.button`
   &:hover {
     box-shadow: -8px 6px 0px -1px rgba(0, 0, 0, 0.75);
   }
+`;
+
+export const Universal = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 `;

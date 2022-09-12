@@ -7,12 +7,12 @@ import News from "./components/News";
 import Startups from "./components/Startups";
 import Customers from "./components/Customers";
 import Footer from "./components/Footer";
-import GlobalStyle from "./components/styles/Globals";
+import GlobalStyle, { Universal } from "./components/styles/Globals";
 import "./components/styles/Globals.css";
 
 function App() {
   return (
-    <div>
+    <Universal>
       <GlobalStyle />
       <Home />
       <AboutUs />
@@ -23,7 +23,7 @@ function App() {
       <Startups />
       <Customers />
       <Footer />
-    </div>
+    </Universal>
   );
 }
 

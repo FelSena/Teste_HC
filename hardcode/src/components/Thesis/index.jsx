@@ -12,7 +12,7 @@ import video from "../../assets/video.png";
 
 const Thesis = () => {
   return (
-    <DefaultDiv>
+    <DefaultDiv bg="linear-gradient(180deg, rgba(0,0,0,1) 35%, rgba(255,255,255,1) 35%)">
       <BlackDiv>
         <ThemeH3 color="white">TESE DE INVESTIMENTO</ThemeH3>
       </BlackDiv>
